@@ -173,3 +173,132 @@ tr:nth-child(even) { background: #eee }
   width: 50%;
   margin-left: 0;
 }
+
+
+
+
+/* // ------ */
+
+.main-header-bar {
+  line-height: 3;
+}
+
+@media (min-width: 922px)
+{
+  .main-header-bar {
+    border-bottom-width: 0;
+    border-bottom-color: #969696;
+  }
+}
+
+.ast-logo-title-inline .ast-site-identity {
+  -js-display: inline-flex;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+.site-branding {
+  text-align: center;
+  width: 100%;
+  background: #3E5062;
+  background-color: #3E5062;
+  color: white;
+  padding: 0 !important;
+  max-height: 150px !important;
+}
+
+.ast-logo-title-inline .site-logo-img {
+  padding-right: 1em;
+}
+.site-logo-img {
+  max-height: 150px !important;
+}
+
+.ast-logo-title-inline.header-main-layout-2 .site-logo-img+.ast-site-title-wrap .site-title {
+  justify-content: flex-start;
+}
+
+.site-title {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.ast-logo-title-inline.header-main-layout-2 .site-logo-img+.ast-site-title-wrap .site-title {
+  justify-content: flex-start;
+}
+
+.site-title a:visited {
+  color: white;
+  font-family: Rockwell;
+  font-weight: 800;
+}
+
+.ast-main-header-bar-alignment {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.main-header-bar-navigation {
+  height: 100%;
+  text-align: center;
+  background: #2B3843;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  flex: 1;
+}
+
+#site-navigation {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.main-navigation {
+  display: inline-flex;
+  height: 100%;
+}
+
+#primary-menu {
+  background: #2B3843;
+  padding-left: 10px;
+}
+
+.main-navigation ul {
+  list-style: none;
+  position: relative;
+}
+
+#primary-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-logo-img {
+  max-height: 150px !important;
+}
+
+.menu-item {
+  flex-direction: col;
+}
+
+.main-header-bar-navigation a {
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+

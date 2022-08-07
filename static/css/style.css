@@ -312,3 +312,6 @@ tr:nth-child(even) { background: #eee }
   text-decoration: none;
 }
 
+#menu-item-rss img {
+  height: 17px;
+}

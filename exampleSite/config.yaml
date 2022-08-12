@@ -12,7 +12,7 @@ enableEmoji: true
 paginate: 6
 
 permalinks:
-  post: "/post/:year/:month/:day/:slug/"
+  posts: "/:filename/"
 
 menu:
   main:

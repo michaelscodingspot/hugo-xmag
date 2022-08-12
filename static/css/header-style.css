@@ -6,12 +6,12 @@
 .pagination { text-align: center; }
 .pagination li, .terms li { display: inline; }
 .pagination a { padding: 0 .2em; }
-.footer {
-  background: #666;
-  padding: 1em 0;
+
+#masthead {
+  margin-bottom: 50px;
 }
-.footer, .footer a { color: #fff; }
-.copyright, .copyright a { color: #ccc; }
+
+
 .menu {
   margin-bottom: .5em;
   flex-wrap: wrap;
@@ -235,5 +235,6 @@ tr:nth-child(even) { background: #eee }
 }
 
 #menu-item-rss img {
-  height: 17px;
+  height: 16px;
+  margin-left:3px;
 }

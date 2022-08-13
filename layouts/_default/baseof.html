@@ -26,7 +26,8 @@
             
           <div class="site-branding">
             <div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-              <span class="site-logo-img"><a href="/" class="custom-logo-link" rel="home"><img width="576" height="150" alt="Michael's Coding Spot blog" data-src="https://michaelscodingspot.com/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" class="custom-logo lazyloaded" src="https://michaelscodingspot.com/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" loading="lazy"><noscript><img width="576" height="150" src="https://michaelscodingspot.com/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" class="custom-logo" alt="Michael&#039;s Coding Spot blog" /></noscript></a></span><div class="ast-site-title-wrap">
+              <span class="site-logo-img"><a href="/" class="custom-logo-link" rel="home">
+                <img width="576" height="150" alt="Michael's Coding Spot blog" data-src="/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" class="custom-logo lazyloaded" src="/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" loading="lazy"><noscript><img width="576" height="150" src="https://michaelscodingspot.com/wp-content/uploads/2020/05/dotnet_blog_memory_performance_debugging1.gif" class="custom-logo" alt="Michael&#039;s Coding Spot blog" /></noscript></a></span><div class="ast-site-title-wrap">
                   <span class="site-title" itemprop="name">
               <a id="site-logo-title" href="/" rel="home" itemprop="url">
                 Michael's Coding Spot
@@ -91,20 +92,7 @@
 <!-- The part of the page that begins to differ between templates -->
 {{ end }}
 
-<footer>
-  {{ partial "foot_custom.html" . }}
-  <div class="footer">
-    <ul class="menu">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}"><span data-hover="{{ .Name }}">{{ .Name }}</span></a></li>
-      {{ end }}
-    </ul>
-    {{ with .Site.Params.footer }}
-    <div class="copyright">{{ . | markdownify }}</div>
-    {{ end }}
-  </div>
-  </footer>
-  
+{{ partial "footer.html" . }}
 
 {{ template "_internal/google_analytics.html" . }}
 

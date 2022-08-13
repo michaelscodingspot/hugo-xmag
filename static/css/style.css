@@ -48,13 +48,28 @@ main { margin-bottom: 15px; }
 
 /* Footer */
 .footer {
-  background: #666;
+  background: #3a3a3a;
+  color: white;
   padding: 1em 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
 }
 .footer, .footer a { color: #fff; }
 .copyright, .copyright a { color: #ccc; }
 
-
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap:50px;
+  text-align: center;
+  margin: auto;
+  padding: 0 15px;
+  list-style-type: none;
+}
 
 /* h6, blockquote */
 

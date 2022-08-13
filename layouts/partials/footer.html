@@ -1,0 +1,10 @@
+<footer>
+    <div class="footer">
+      <ul >
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}"><span data-hover="{{ .Name }}">{{ .Name }}</span></a></li>
+        {{ end }}
+      </ul>
+      
+    </div>
+  </footer>

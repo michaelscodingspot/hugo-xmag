@@ -1,0 +1,10 @@
+{{ $ext := path.Ext . }}
+{{ $noExt := strings.TrimSuffix (path.Ext .) . }}
+{{ $dir := path.Dir . }}
+{{ $dir := print $dir "aaa" }}
+{{ $files := readDir (printf $dir "/") }}
+
+<p>aa {{ $dir }} bb</p>
+<p>aa {{ $ext }} bb</p>
+<p>aa {{ $noExt }} bb</p>
+

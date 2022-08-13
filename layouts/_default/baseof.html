@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="{{ "/css/list-style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/single-style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
-    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"> -->
   </head>
 
   <body{{if .IsPage}} class="page"{{ end }}>
@@ -106,16 +105,6 @@
   </div>
   </footer>
   
-
-
-{{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>
-hljs.configure({languages: []});
-hljs.initHighlightingOnLoad();
-</script>
-{{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
 

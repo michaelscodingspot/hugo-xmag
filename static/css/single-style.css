@@ -16,6 +16,11 @@
   margin-bottom: 0;
 }
 
+.article-single h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
 article {
   padding: 30px;
 }

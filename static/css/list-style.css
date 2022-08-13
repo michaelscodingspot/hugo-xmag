@@ -26,21 +26,7 @@
   .list section { max-width: calc(33.33333% - 15px); }
 }
 .article-list a, .banner a { color: #000; }
-.categories a {
-  font-size: .9em;
-  font-weight: bolder;
-  text-transform: uppercase;
-  color: #666;
-}
-h1 a:hover { text-decoration: underline; }
-.article-list h1 { margin: .2em auto .2em 0; }
-article { padding: 1em; }
-.article-meta {
-  text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
-}
+
 
 .list h1 {
   font-size: 18px;
@@ -50,6 +36,8 @@ article { padding: 1em; }
 .list .summary {
   font-size: 14px;
 }
+
+.article-list h1 { margin: .2em auto .2em 0; }
 
 /* image  */
 .list img {

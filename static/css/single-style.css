@@ -1,0 +1,40 @@
+/* single style */
+/* ============ */
+
+.container-single {
+  background-color: white;
+  background: white;
+  margin: 70px auto;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgb(58,58, 58);
+}
+
+.article-single h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+article {
+  padding: 30px;
+}
+.article-meta {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.post-meta a {
+  font-size: .9em;
+  text-transform: uppercase;
+}
+
+.post-meta {
+  color: #0274be;
+}
+
+#featured-image {
+  margin-top: 20px;
+
+}

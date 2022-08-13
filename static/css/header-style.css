@@ -1,4 +1,3 @@
-.menu, .article-meta, footer, .post-nav { text-align: center; }
 .article-footer { text-align: left; }
 .title { font-size: 1.2em; }
 .article-list h1, .title { line-height: 1.2em; }
@@ -86,7 +85,7 @@ tr:nth-child(even) { background: #eee }
 }
 .terms { padding-left: 0; }
 .post-nav {
-  margin: .5em 0;
+  margin: 60px 0;
   display: flex;
   justify-content: space-between;
 }

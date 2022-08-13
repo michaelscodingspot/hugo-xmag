@@ -1,28 +1,30 @@
-{{ partial "header.html" . }}
-<div class="container">
-  
-<main class="list">
+{{ define "main" }}
+  <div class="container">
+    
+  <main class="list">
 
-{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-{{ range $paginator.Pages }}
-<section class="article-list">
-  <img src="{{ .Params.image }}"/>
-  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  
-  <div class="summary">
-    {{ with .Params.excerpt }}
-    <p>{{ . }}</p>
-    {{ else }}
-    <p>{{ .Summary }}</p>
-    {{ end }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+  {{ range $paginator.Pages }}
+  <section class="article-list">
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.image }}"/>
+      <h2>{{ .Title }}</h2>
+    </a>
+    
+    <div class="summary">
+      {{ with .Params.excerpt }}
+      <p>{{ . }}</p>
+      {{ else }}
+      <p>{{ .Summary }}</p>
+      {{ end }}
+    </div>
+    
+  </section>
+  {{ end }}
+
+
+  </main>
+  <nav>{{ template "_internal/pagination.html" . }}</nav>
   </div>
-  
-</section>
+
 {{ end }}
-
-
-</main>
-<nav>{{ template "_internal/pagination.html" . }}</nav>
-</div>
-
-{{ partial "footer.html" . }}

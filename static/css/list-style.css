@@ -9,10 +9,6 @@
 .list section {
   flex: 1 0 300px;
   margin: 20px;
-  /* box-sizing: border-box;
-  box-shadow: 0 0 8px #ccc;
-  margin: 1em 0 0 15px;
-  padding: 1em; */
   overflow-x: hidden;
 }
 @media (max-width: 380px) {
@@ -20,7 +16,7 @@
 }
 @media (min-width: 715px) {
   .list section { max-width: calc(50% - 15px); }
-  .article-list h1:hover { white-space: inherit; }
+  .article-list h2:hover { white-space: inherit; }
 }
 @media (min-width: 1080px) {
   .list section { max-width: calc(33.33333% - 15px); }
@@ -28,16 +24,17 @@
 .article-list a, .banner a { color: #000; }
 
 
-.list h1 {
+.list h2 {
   font-size: 18px;
   font-weight: 600;
+  color: #54595f;
 }
 
 .list .summary {
   font-size: 14px;
 }
 
-.article-list h1 { margin: .2em auto .2em 0; }
+.article-list h2 { margin: .2em auto .2em 0; }
 
 /* image  */
 .list img {

@@ -1,0 +1,13 @@
+<div id="subscribe-recent-container" class="sidebar-widget">
+<h2 class="widget-title">Recent Posts</h2>
+
+
+<ul>
+{{ range (first 10 (where site.RegularPages "Type" "posts")) }}
+<li>
+  <a href="{{ .RelPermalink }}">{{ .Title}}</a> 
+</li>
+{{ end }}
+</ul>
+
+</div>  

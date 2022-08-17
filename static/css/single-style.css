@@ -20,12 +20,6 @@
   margin-right:25px;
 }
 
-.sidebar-container {
-  margin-left:25px;
-  width: 302px;
-  background-color: beige;
-
-}
 
 .article-single h1 {
   font-size: 30px;
@@ -60,3 +54,17 @@ article {
   margin-top: 20px;
 
 }
+
+/* Sidebar */
+/* ======= */
+
+.sidebar-container {
+  margin-left:25px;
+  width: 302px;
+  /* background-color: beige; */
+}
+
+
+
+
+

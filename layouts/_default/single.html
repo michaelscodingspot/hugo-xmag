@@ -1,33 +1,40 @@
 {{ define "main" }}
 
-<div class="container container-single">
-<article class="article-single">
-<div class="article-meta">
+<div class="container-single">
+  <article class="article-single">
+    <div class="article-meta">
 
-  <h1 class="title">{{ .Title }}</h1>
-  {{ $isPost := eq .Section "posts" }}
-  {{ if $isPost }}
-    <span class="post-meta">
-    {{ range $i, $e := .Params.categories }}
-      {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
+      <h1 class="title">{{ .Title }}</h1>
+      {{ $isPost := eq .Section "posts" }}
+      {{ if $isPost }}
+        <span class="post-meta">
+        {{ range $i, $e := .Params.categories }}
+          {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
+        {{ end }}
+        / {{ time.Format "Jan 2, 2006" .Params.date }}
+        </span>
+      {{ end }}
+      {{ with .Params.image }}
+        <img id="featured-image" src="{{ . }}"/>
+      {{ end }}
+    </div>
+
+    <main class="main-single">
+    {{ .Content }}
+    </main>
+
+    {{ if $isPost }}
+      {{ partial "prev_next.html" . }}
+      {{ partial "comments.html" . }}
     {{ end }}
-    / {{ time.Format "Jan 2, 2006" .Params.date }}
-    </span>
-  {{ end }}
-  {{ with .Params.image }}
-    <img id="featured-image" src="{{ . }}"/>
-  {{ end }}
+  </article>
+
+  <div class="sidebar-container">
+    <p>sdfsdfas</p>
+  </div>
+
 </div>
 
-<main class="main-single">
-{{ .Content }}
-</main>
 
-{{ if $isPost }}
-  {{ partial "prev_next.html" . }}
-  {{ partial "comments.html" . }}
-{{ end }}
-</article>
-</div>
 
 {{ end }}

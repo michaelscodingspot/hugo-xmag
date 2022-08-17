@@ -4,13 +4,14 @@ body {
   background: #F5F5F5;
 }
 
-.menu, footer, .post-nav { text-align: center; }
+.post-nav { text-align: center; }
 
 .header div, .container, .copyright, .menu {
   max-width: 1100px;
   margin: auto;
   padding: 0 15px;
 }
+
 .page .header div, .page .container, .page .copyright, .page .menu { max-width: 900px; }
 .container { hyphens: auto; }
 @media (max-width: 930px) {

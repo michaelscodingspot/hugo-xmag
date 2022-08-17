@@ -6,8 +6,10 @@
 .pagination li, .terms li { display: inline; }
 .pagination a { padding: 0 .2em; }
 
+
 #masthead {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 

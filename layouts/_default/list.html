@@ -3,6 +3,8 @@
     
   <main class="list">
 
+
+    {{ if .IsHome }}
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
   {{ range $paginator.Pages }}
   <section class="article-list">
@@ -22,9 +24,31 @@
   </section>
   {{ end }}
 
+{{ else }}
+{{ $paginator := .Paginate .Pages }}
+  {{ range $paginator.Pages }}
+  <section class="article-list">
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.image }}"/>
+      <h2>{{ .Title }}</h2>
+    </a>
+    
+    <div class="summary">
+      {{ with .Params.excerpt }}
+      <p>{{ . }}</p>
+      {{ else }}
+      <p>{{ .Summary }}</p>
+      {{ end }}
+    </div>
+    
+  </section>
+  {{ end }}
+{{ end }}
 
   </main>
   <nav>{{ template "_internal/pagination.html" . }}</nav>
   </div>
+
+
 
 {{ end }}

@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  line-height: 26px;
   background: #F5F5F5;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +20,10 @@ h1 {
 }
 
 .page .header div, .page .copyright, .page .menu { max-width: 900px; }
-.container { hyphens: auto; }
+.container { 
+  hyphens: auto; 
+  line-height: 26px;
+}
 @media (max-width: 930px) {
   .page .container { padding: 0; }
 }

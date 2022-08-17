@@ -99,19 +99,14 @@ tr:nth-child(even) { background: #eee }
 
 
 
-/* // ------ */
 
-.main-header-bar {
-  line-height: 3;
-}
-
-@media (min-width: 922px)
+/* @media (min-width: 922px)
 {
   .main-header-bar {
     border-bottom-width: 0;
     border-bottom-color: #969696;
   }
-}
+} */
 
 .ast-logo-title-inline .ast-site-identity {
   -js-display: inline-flex;
@@ -238,3 +233,64 @@ tr:nth-child(even) { background: #eee }
   height: 16px;
   margin-left:3px;
 }
+
+#brand-image {
+  display: inline-block;
+}
+
+#brand-logo {
+  display: inline-block;
+  color: white;
+  font-family: Rockwell;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 75px;
+}
+
+/* // site branding  */
+.main-header-container {
+  background-color:  rgb(62, 80, 98);
+  margin-bottom: -4px;
+}
+
+@media (max-width: 900px) {
+  #brand-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -4px;
+  }
+
+  #brand-logo {
+    margin: 0px;
+    padding: 15px;
+    display: block;
+    background-color: peru;
+  }
+  .main-header-container {
+    margin-bottom: 0;
+  } 
+
+}
+
+
+
+/* Hamburger
+
+
+@media all and (min-width:320px) {
+  .ast-mobile-menu-buttons {
+    display: none;
+  }
+}
+
+.ast-button-wrap .menu-toggle .menu-toggle-icon:before {
+  content: "\e5d2";
+  font-family: Astra;
+  text-decoration: inherit;
+} */
+
+
+

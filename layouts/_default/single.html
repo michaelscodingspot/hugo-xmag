@@ -30,7 +30,10 @@
   </article>
 
   <div class="sidebar-container">
-    {{ partial "sidebar_subscribe.html"}}
+    {{ if (index .Params "showSubscribe" | default true) }}
+      {{ partial "sidebar_subscribe.html"}}
+    {{ end }}
+    
     {{ partial "sidebar_self.html"}}
     {{ partial "sidebar_recent.html" }}
   </div>

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.mediavine.com/tags/michaels-coding-spot.js"></script>
+    {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
   </head>
 
   <body{{if .IsPage}} class="page"{{ end }}>
@@ -117,7 +119,7 @@
     </div>
     {{ partial "footer.html" . }}
 
-    {{ template "_internal/google_analytics.html" . }}
+    
 
 </body>
 </html>

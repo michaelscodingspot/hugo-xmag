@@ -34,6 +34,18 @@
   /* background-color: beige; */
 }
 
+@media only screen and (max-width: 1288px) {
+  .sidebar-container {
+    margin-left:10px;
+  }
+
+  .article-single {
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+}
+
 @media only screen and (max-width: 800px) {
   .article-single {
     display: block;

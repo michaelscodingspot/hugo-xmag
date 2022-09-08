@@ -153,6 +153,13 @@ pre code {
   /* margin-right:25px; */
 }
 
+#featured-image {
+  width: 790px;
+  height: 473px;
+  margin-top: 20px;
+}
+
+
 /* Sidebar */
 .sidebar-container {
   margin-left:60px;
@@ -190,6 +197,14 @@ pre code {
   .article-single {
     padding: 10px;
   }
+
+}
+
+@media only screen and (max-width: 920px) {
+  #featured-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -222,12 +237,6 @@ article {
   text-decoration: none;
 }
 
-#featured-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-
-}
 
 
 /*===Sidebar==========================================================*/

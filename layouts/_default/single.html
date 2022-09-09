@@ -45,11 +45,11 @@
 {{ end }}
 
 {{ define "meta" }}
-<meta property="og:title" content='{{ .Title }}' >
-<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ .Title }}" >
+<meta property="og:type" content="article" >
 {{ with .Params.image }}
-        <meta property="og:image" content='https://michaelscodingspot.com{{ . }}'>
+        <meta property="og:image" content="https://michaelscodingspot.com{{ . }}">
 {{ end }}
-<meta property="og:url" content='https://michaelscodingspot.com{{ .Page.RelPermalink }}'>
+<meta property="og:url" content="https://michaelscodingspot.com{{ .Page.RelPermalink }}">
 <meta name="twitter:card" content="summary_large_image">
 {{ end }}

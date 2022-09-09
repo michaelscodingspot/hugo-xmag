@@ -43,3 +43,13 @@
 
 
 {{ end }}
+
+{{ define "meta" }}
+<meta property="og:title" content='{{ .Title }}' >
+<meta property="og:type" content="article" />
+{{ with .Params.image }}
+        <meta property="og:image" content='https://michaelscodingspot.com{{ . }}'>
+{{ end }}
+<meta property="og:url" content='{{ .Permalink | absURL }}'>
+<meta name="twitter:card" content="summary_large_image">
+{{ end }}

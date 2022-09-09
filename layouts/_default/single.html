@@ -52,4 +52,9 @@
 {{ end }}
 <meta property="og:url" content="https://michaelscodingspot.com{{ .Page.RelPermalink }}">
 <meta name="twitter:card" content="summary_large_image">
+
+{{ with .Params.excerpt }}<meta property="og:description" content="{{ . }}">
+{{ else }} <meta property="og:description" content="{{ .Summary }}">{{ end }}
+
+<meta property="og:site_name" content="Michael's Coding Spot">
 {{ end }}

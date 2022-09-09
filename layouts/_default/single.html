@@ -50,6 +50,6 @@
 {{ with .Params.image }}
         <meta property="og:image" content='https://michaelscodingspot.com{{ . }}'>
 {{ end }}
-<meta property="og:url" content='{{ .Permalink | absURL }}'>
+<meta property="og:url" content='https://michaelscodingspot.com{{ .Page.RelPermalink }}'>
 <meta name="twitter:card" content="summary_large_image">
 {{ end }}

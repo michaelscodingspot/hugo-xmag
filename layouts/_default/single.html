@@ -24,8 +24,18 @@
     </main>
 
     <div id="share-buttons">
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="MichaelShpilt" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      {{ $url := printf "https://michaelscodingspot.com%s" .Page.RelPermalink }}
+      <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ $url }}" target="_blank">
+        <img src="/img/share/twitter-share.png"/>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank" rel="noopener noreferrer">
+        <img src="/img/share/facebook-share.png"/>
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}" target="_blank" rel="noopener noreferrer">
+        <img src="/img/share/linkedin-share.png"/>
+      </a>
     </div>
+
 
     {{ if $isPost }}
       {{ partial "prev_next.html" . }}

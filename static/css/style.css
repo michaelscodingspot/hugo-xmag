@@ -159,6 +159,16 @@ pre code {
   margin-top: 20px;
 }
 
+#share-buttons a {
+  margin-right: 5px;
+}
+
+#share-buttons a img {
+  width: 40px;
+  height: 40px;
+}
+
+/*===single.sidebar==========================================================*/
 
 /* Sidebar */
 .sidebar-container {

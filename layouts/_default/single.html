@@ -45,6 +45,7 @@
 
   </article>
 
+
   <div class="sidebar-container">
     {{ if (index .Params "showSubscribe" | default true) }}
       {{ partial "sidebar_subscribe.html"}}
@@ -55,6 +56,9 @@
   </div>
 
 </div>
+
+{{ template "_internal/disqus.html" . }}
+
 
 
 

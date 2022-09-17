@@ -42,6 +42,11 @@
       {{ partial "comments.html" . }}
     {{ end }}
 
+    <div id="commento-container">
+      <script defer src="https://cdn.commento.io/js/commento.js"></script>
+      <div id="commento"></div>
+    </div>
+
 
   </article>
 
@@ -57,10 +62,7 @@
 
 </div>
 
-<div id="commento-container">
-  <script defer src="https://cdn.commento.io/js/commento.js"></script>
-  <div id="commento"></div>
-</div>
+
 
 {{ end }}
 

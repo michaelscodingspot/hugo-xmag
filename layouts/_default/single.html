@@ -7,12 +7,19 @@
       <h1 class="title">{{ .Title }}</h1>
       {{ $isPost := eq .Section "posts" }}
       {{ if $isPost }}
-        <span class="post-meta">
+        <span class="post-meta">  
         {{ range $i, $e := .Params.categories }}
           {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
         {{ end }}
+        |
+        {{ range $i, $e := .Params.tags }}
+          {{ if $i }}, {{ end }}<a href="{{ relURL (print "/tags/" $e | urlize) }}">{{ $e}}</a>
+        {{ end }}
         / {{ time.Format "Jan 2, 2006" .Params.date }}
         </span>
+
+
+
       {{ end }}
       {{ with .Params.image }}
         <img id="featured-image" src="{{ . }}"/>

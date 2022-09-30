@@ -602,6 +602,11 @@ tr:nth-child(even) { background: #eee }
   display: inline-block;
 }
 
+#brand-image-actual {
+  width: 576px;
+  height: 150px;
+}
+
 #brand-logo {
   display: inline-block;
   color: white;
@@ -625,6 +630,10 @@ tr:nth-child(even) { background: #eee }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -4px;
+  }
+
+  #brand-image-actual {
+    height: 100%;
   }
 
   #brand-logo {

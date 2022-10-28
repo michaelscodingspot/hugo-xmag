@@ -12,6 +12,12 @@
       <img src="{{ .Params.image }}"/>
       <h2>{{ .Title }}</h2>
     </a>
+    <span class="post-meta-list">
+    {{ range $i, $e := .Params.categories }}
+      {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
+    {{ end }}
+    | {{ time.Format "Jan 2, 2006" .Params.date }}
+    </span>
     
     <div class="summary">
       {{ with .Params.excerpt }}

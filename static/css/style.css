@@ -253,6 +253,15 @@ article {
   text-decoration: none;
 }
 
+.post-meta-list {
+  color: #7c6331;
+}
+
+.post-meta-list a {
+  color:#7c6331;
+  text-decoration: none;
+}
+
 
 
 /*===Sidebar==========================================================*/
@@ -371,7 +380,8 @@ article {
 @media (min-width: 1080px) {
   .list section { max-width: calc(33.33333% - 15px); }
 }
-.article-list a, .banner a { color: #000; }
+
+
 
 
 .list h2 {
@@ -380,8 +390,9 @@ article {
   color: #54595f;
 }
 
-.list .summary {
+.summary p{
   font-size: 14px;
+  margin-top: 3px;
 }
 
 .article-list h2 { margin: .2em auto .2em 0; }

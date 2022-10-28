@@ -634,9 +634,24 @@ tr:nth-child(even) { background: #eee }
   display: inline-block;
 }
 
+#brand-container {
+  position: relative;
+}
+
+
 #brand-image-actual {
-  width: 576px;
-  height: 150px;
+  width: 413px;
+  height: 171px;
+}
+
+#brand-image-avatar {
+  position: absolute;
+  /*left: 188px;
+  top: 42px;
+  width: 12%; */
+  left: 190px;
+  top: 50px;
+  width: 9%;
 }
 
 #brand-logo {
@@ -652,7 +667,7 @@ tr:nth-child(even) { background: #eee }
 
 /* // site branding  */
 .main-header-container {
-  background-color:  rgb(62, 80, 98);
+  background-color:  #88B2D8;
   margin-bottom: -4px;
 }
 

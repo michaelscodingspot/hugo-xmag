@@ -7,54 +7,13 @@
     {{ if .IsHome }}
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
   {{ range $paginator.Pages }}
-  <section class="article-list">
-    <a href="{{ .RelPermalink }}">
-      <img src="{{ .Params.image }}"/>
-      <h2>{{ .Title }}</h2>
-    </a>
-    <span class="post-meta-list">
-    {{ range $i, $e := .Params.categories }}
-      {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
-    {{ end }}
-    | {{ time.Format "Jan 2, 2006" .Params.date }}
-    </span>
-    
-    <div class="summary">
-      {{ with .Params.excerpt }}
-      <p>{{ . }}</p>
-      {{ else }}
-      <p>{{ .Summary }}</p>
-      {{ end }}
-    </div>
-    
-  </section>
+    {{ partial "list_internal.html" . }}
   {{ end }}
 
 {{ else }}
 {{ $paginator := .Paginate .Pages }}
   {{ range $paginator.Pages }}
-  <section class="article-list">
-    <a href="{{ .RelPermalink }}">
-      <img src="{{ .Params.image }}"/>
-      <h2>{{ .Title }}</h2>
-    </a>
-
-    <span class="post-meta-list">
-      {{ range $i, $e := .Params.categories }}
-        {{ if $i }} &hercon; {{ end }}<a href="{{ relURL (print "/categories/" $e | urlize) }}">{{ $e }}</a>
-      {{ end }}
-      | {{ time.Format "Jan 2, 2006" .Params.date }}
-      </span>
-    
-    <div class="summary">
-      {{ with .Params.excerpt }}
-      <p>{{ . }}</p>
-      {{ else }}
-      <p>{{ .Summary }}</p>
-      {{ end }}
-    </div>
-    
-  </section>
+    {{ partial "list_internal.html" . }}
   {{ end }}
 {{ end }}
 

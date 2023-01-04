@@ -4,17 +4,19 @@
 <article>
 <main>
 <h1>{{ $.Scratch.Get "Title" }}</h1>
-
-<ul class="terms">
-  {{ range $key, $value := .Data.Terms }}
-  <li>
-    <a href="{{ (print "/" $.Data.Plural "/" $key) | relURL }}">
-      {{ $key }}
-    </a>
-    ({{ len $value }})
-  </li>
-  {{ end }}
-</ul>
+<div class="terms-container">
+  <ul class="terms">
+    {{ range $key, $value := .Data.Terms.ByCount }}
+    <li>
+      <a href="{{ (print "/" $.Data.Plural "/" $value.Name) | relURL }}">
+        {{ $value.Name }}  
+      </a>
+      ({{ .Count }})
+      
+    </li>
+    {{ end }}
+  </ul>
+</div>
 </main>
 </article>
 </div>

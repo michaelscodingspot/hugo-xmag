@@ -409,7 +409,7 @@ article {
 .article-list h1, .title { line-height: 1.2em; }
 .article-list a, .header a, footer a, .categories a, .active a, .comments a { text-decoration: none; }
 .pagination { text-align: center; }
-.pagination li, .terms li { display: inline; }
+.pagination li { display: inline; }
 .pagination a { padding: 0 .2em; }
 
 
@@ -491,7 +491,6 @@ tr:nth-child(even) { background: #eee }
   text-align: center;
   font-size: 1.2em;
 }
-.terms { padding-left: 0; }
 .post-nav {
   margin: 60px 0;
   display: flex;
@@ -504,6 +503,14 @@ tr:nth-child(even) { background: #eee }
 }
 
 
+.terms { padding-left: 5px; }
+
+.terms-container ul {
+  font-size: 17px;
+  list-style-type: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
 
 
 

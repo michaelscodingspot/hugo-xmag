@@ -503,7 +503,7 @@ tr:nth-child(even) { background: #eee }
 }
 
 
-.terms { padding-left: 5px; }
+.terms { padding-left: 0; }
 
 .terms-container ul {
   font-size: 17px;

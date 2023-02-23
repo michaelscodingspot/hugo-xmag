@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ block "meta" . }}
@@ -16,10 +17,18 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.mediavine.com/tags/michaels-coding-spot.js"></script>
 
-    {{ template "_internal/google_analytics.html" . }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWVHK5H9FY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-HWVHK5H9FY');
+    </script>  
     
   </head>
+  
 
   <body{{if .IsPage}} class="page"{{ end }}>
     <header class="site-header ast-primary-submenu-animation-fade header-main-layout-2 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">

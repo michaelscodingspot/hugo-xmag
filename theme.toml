@@ -1,3 +1,5 @@
+baseurl = true
+relativeurls = true
 name = "XMag"
 license = "MIT"
 licenselink = "https://github.com/yihui/hugo-xmag/blob/master/LICENSE.md"

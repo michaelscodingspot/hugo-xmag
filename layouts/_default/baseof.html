@@ -9,6 +9,7 @@
     
     {{ $.Scratch.Set "Title" (default .Title (index .Site.Params.text (print "title_" (lower .Title)))) }}
     <title>{{ if eq ($.Scratch.Get "Title") .Site.Title }}{{ .Site.Title }}{{ else }}{{ ($.Scratch.Get "Title") }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="Michael Shpilt's Blog on .NET software development, C#, performance, debugging, and programming productivity" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
